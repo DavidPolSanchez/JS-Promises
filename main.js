@@ -3,9 +3,6 @@ var altura="169";
 var concatenado= nombre + " " + altura;
 
 
-
-
-
 if(altura >=180){
     datos.innerHTML += '<h1>Eres una persona alta</h1>';
 }else{
@@ -15,6 +12,7 @@ for(var i=2000;i<=2023;i++){
     //bloque de instrucciones
     datos.innerHTML +='<h2>estamos en el año '+i;
 }
+
 
 //functions
 function muestraMiNombre(nombre,altura){
@@ -32,8 +30,9 @@ function imprimir(){
 }
 
 imprimir("david",169);
-//Arrays
 
+
+//Arrays
 var nombres =["david","Pol","Sanchez"]
 /*
 for(var i=0;i<nombres.length;i++){
@@ -43,7 +42,21 @@ for(var i=0;i<nombres.length;i++){
 nombres.forEach((nombre)=>{
     document.write(nombre+'</br>')
 })
-coche.cogerDatos();
+
+//objectos
+var coche={
+    modelo:"Kia Ceed",
+    maxima: 500,
+    antiguedad:2023,
+    mostrarDatos(){
+        //ver desde consola 
+        console.log(this.modelo,this.maxima,this.antiguedad);
+    },
+    propiedad1:"valor aleatorio"
+}
+document.write("<h1>"+coche.modelo+"</h1>");
+coche.mostrarDatos();
+
 console.log(coche);
 
 var saludar = new Promise((resolve, reject) => {
