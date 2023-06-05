@@ -2,12 +2,14 @@ var nombre ="David Pol";
 var altura="169";
 var concatenado= nombre + " " + altura;
 
+var datos= document.getElementById('datos');
 
 if(altura >=180){
     datos.innerHTML += '<h1>Eres una persona alta</h1>';
 }else{
     datos.innerHTML += '<h1>Eres una persona bajita</h1>';
 }
+
 for(var i=2000;i<=2023;i++){
     //bloque de instrucciones
     datos.innerHTML +='<h2>estamos en el año '+i;
