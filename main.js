@@ -61,6 +61,8 @@ coche.mostrarDatos();
 
 console.log(coche);
 
+//Promises
+
 var saludar = new Promise((resolve, reject) => {
 
     setTimeout(()=>{
@@ -73,3 +75,10 @@ var saludar = new Promise((resolve, reject) => {
          }
     },2000);
 });
+
+saludar.then(resultado=>{
+    alert(resultado);
+})
+.catch(err =>{
+    alert(err)
+})
